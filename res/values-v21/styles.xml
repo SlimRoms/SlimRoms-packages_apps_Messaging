@@ -15,12 +15,21 @@
     limitations under the License.
 -->
 <resources>
+
+    <style name="BugleBaseTheme" parent="@android:Theme.Material.DayNight.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
     <style name="BugleTheme.ConversationActivity"
         parent="@style/BugleTheme.ConversationActivityBase">
         <item name="android:colorEdgeEffect">@color/conversation_edge_effect</item>
     </style>
 
-    <style name="BugleTheme.DialogActivity" parent="@style/Theme.AppCompat.Light.Dialog">
+    <style name="BugleTheme.DialogActivity" parent="@android:style/Theme.Material.DayNight.Dialog">
         <item name="android:windowNoTitle">false</item>
         <item name="android:background">@android:color/white</item>
     </style>
